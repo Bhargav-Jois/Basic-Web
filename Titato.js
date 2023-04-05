@@ -19,19 +19,31 @@ const winningCombinations = [
             [0, 4, 8],
             [2, 4, 6]     ];
 function turn_change(){
-  if (turn=="x"){
+  if (winner == 0 || draw == 1){
    var trno=  document.getElementById("turn");
-   trno.innerHTML=" X";
+   trno.innerHTML=" -";
    trno.style.color="#02e7f7";
   }
   else{
-   var trnt=document.getElementById("turn");
-   trnt.innerHTML=" O";
-   trnt.style.color="yellow";
+    if (turn=="x"){
+     var trno=  document.getElementById("turn");
+     trno.innerHTML=" X";
+     trno.style.color="#02e7f7";
+    }
+    else{
+     var trnt=document.getElementById("turn");
+     trnt.innerHTML=" O";
+     trnt.style.color="yellow";
+    }
   }
 }
 
-
+function playAI(){
+            if (turn == "o"){
+                        
+            }
+}
+            
 
 function change(i){
  if(winner){
