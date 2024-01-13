@@ -1,23 +1,9 @@
 var winner=1;
 var draw=0;
-var xplayed=[[]];
-var oplayed=[[]];
-var ToWinCombinations=[
-            [0,1],[3,4],[6,7],[0,3],[1,4],[2,5],[0,4],[2,4],[1,2],[4,5],[7,8],[3,6],[4,7],[5,8],[4,8],[4,6],[0,2],[3,5],[6,8],[0,6],[1,7],[2,8],[0,8],[2,6]
-];
 var audio = new Audio("Touch_Sound_Effect_(Private_Only)(128k).mp3");
 var audio_win = new Audio("win_sound(128k).mp3");
 var all_full=0;
 var turn= "x";
-const winningCombinations = [
-            [0, 1, 2],
-            [3, 4, 5],
-            [6, 7, 8],
-            [0, 3, 6],
-            [1, 4, 7],
-            [2, 5, 8],
-            [0, 4, 8],
-            [2, 4, 6]     ];
 function turn_change(){
   if (winner == 0 || draw == 1){
    var trno=  document.getElementById("turn");
@@ -37,13 +23,6 @@ function turn_change(){
     }
   }
 }
-
-function playAI(){
-            if (turn == "o"){
-                        
-            }
-}
-            
 
 function change(i){
  if(winner){
