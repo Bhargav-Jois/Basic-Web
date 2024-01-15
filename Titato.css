@@ -24,8 +24,6 @@ div {
   font-size: 5em;
   padding: 5px;
   font-family: 'Open Sans', sans-serif;
-  min-width: 500px;
-  margin: 0 auto;
 }
 
 
@@ -44,8 +42,6 @@ div {
   display: grid;
   font-size: 1.2em;
   grid-template-columns: repeat(3,1fr);
-  min-width: 500px;
-  margin: 0 auto;
 }
 
 .rht{
