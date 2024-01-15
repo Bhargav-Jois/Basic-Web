@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="Titato.css" rel=stylesheet type="text/css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -15,32 +15,26 @@
       <i class="toe">Toe</i>
     </h1>
     <div class="wrapper">
-    <div class="header">
-     <h3>Turn: <i id="turn">X</i></h3>
-      <h3 id="mid">Play</h3>
-      <h3 class="rht"><button onclick="refresh()"><i class="material-icons">refresh</i></button></h3>
-    </div>
-    <div class="container">
-      <div class="tile" onclick="change(0)">
+      <p style="color: white; display:flex; justify-content: space-between; border-top: 1px solid white; border-bottom: 1px solid white; padding: 5px">
+        <em style="color: #02e7f7">X (Player) : <span id="xscore">0</span></em> <em  style="color: yellow"><span id="oscore">0</span> : O (Computer)</em>
+      </p>
+      <div class="header">
+      <h3>Turn: <i id="turn">X</i></h3>
+        <h3 id="mid">Play</h3>
+        <h3 class="rht"><button onclick="refresh()"><i class="material-icons">refresh</i></button></h3>
       </div>
-      <div class="tile" onclick="change(1)">
-      </div>
-      <div class="tile" onclick="change(2)">
-      </div>
-      <div class="tile" onclick="change(3)">
-      </div>
-      <div class="tile"  onclick="change(4)">
-      </div>
-      <div class="tile"  onclick="change(5)">
-      </div>
-      <div class="tile" onclick="change(6)">
-      </div>
-      <div class="tile" onclick="change(7)">
-      </div>
-      <div class="tile" onclick="change(8)">  
+      <div class="container">
+        <div class="tile" id="0" onclick="change(0)"></div>
+        <div class="tile" id="1" onclick="change(1)"></div>
+        <div class="tile" id="2" onclick="change(2)"></div>
+        <div class="tile" id="3" onclick="change(3)"></div>
+        <div class="tile" id="4" onclick="change(4)"></div>
+        <div class="tile" id="5" onclick="change(5)"></div>
+        <div class="tile" id="6" onclick="change(6)"></div>
+        <div class="tile" id="7" onclick="change(7)"></div>
+        <div class="tile" id="8" onclick="change(8)"></div>
       </div>
     </div>
-    </div>
-    <script src="Titato.js" type="text/javascript" charset="utf-8"></script>
+    <script src="titato.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
